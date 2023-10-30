@@ -9,8 +9,6 @@ jobs:
         steps:
         - name: Checkout code
           uses: actions/checkout@v4
-        - name: Navigate to tests directory
-          run: cd ./tests
         - name: Run tests of Solution 1
           run: python -m unittest tests/test_solution1.py
         - name: Run tests of Solution 2
