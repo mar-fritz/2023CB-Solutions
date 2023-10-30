@@ -1,0 +1,17 @@
+name: Run Tests Workflow
+
+on: push
+
+jobs:
+    unit-testing:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+        - name: Navigate to tests directory
+          run: cd ./tests
+        - name: Run tests of Solution 1
+          run: python -m unittest test_solution1.py
+        - name: Run tests of Solution 2
+          run: python -m unittest test_solution2.py
