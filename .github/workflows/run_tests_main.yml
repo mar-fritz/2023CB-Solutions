@@ -12,6 +12,6 @@ jobs:
         - name: Navigate to tests directory
           run: cd ./tests
         - name: Run tests of Solution 1
-          run: python -m unittest test_solution1.py
+          run: python -m unittest tests/test_solution1.py
         - name: Run tests of Solution 2
-          run: python -m unittest test_solution2.py
+          run: python -m unittest tests/test_solution2.py
